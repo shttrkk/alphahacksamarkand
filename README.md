@@ -1,10 +1,5 @@
 # Alpha RAG Elite – Hackathon Crunch Edition
 
-Топовый retrieval-пайплайн для банковского RAG хакатона Альфа-Банка.
-**Цель:** 60%+ Hit@5 за 14-16 часов разработки.
-
----
-
 ## Архитектура
 
 **Hybrid Multi-Level Retrieval System:**
@@ -15,9 +10,6 @@
 - 🔥 **Multi-strategy query expansion** (rule-based + PRF)
 - ⚠️ **Optional lightweight reranker** (only if validated)
 
-**Expected performance:**
-- Baseline (Егор): ~28% Hit@5
-- After all features: **58-68% Hit@5**
 
 ---
 
@@ -53,9 +45,8 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/azama2t/alpha_hack_v2.git
-cd alpha_hack_v2
-git checkout claude/enhance-rag-retrieval-01PoWpmzz2iYpxUjuAZi7KmC
+git clone ,,,
+cd ...
 ```
 
 ### 2. Создание окружения
@@ -344,33 +335,14 @@ alpha_hack_v2/
 
 ---
 
-## Компоненты и их вклад
 
-| Компонент | Прирост Hit@5 | Время |
-|-----------|---------------|-------|
-| Baseline (Егор) | 28% | - |
-| Enhanced normalization | +3-6 п.п. | 2 мин |
-| 4-model ensemble + RRF | +10-15 п.п. | 20 мин |
-| Chunk-level fusion | +6-10 п.п. | 10 мин |
-| Query expansion | +4-8 п.п. | 1 мин |
-| Aggressive domain boosts | +5-8 п.п. | 1 мин |
-| **Total (without rerank)** | **56-75%** | **34 мин** |
-| Optional reranking | +2-6 п.п. | 5 мин |
-| **Total (with rerank)** | **58-81%** | **39 мин** |
-
----
-
-## Лицензия
-
-MIT License
-
----
 
 ## Авторы
+- Gleb(DS/backend)
+- Fedos (backend)
+- Egor (backend)
+- Mark(backend)
+- Matvey (ML)
 
-- Fedos (HYDRA chunk-based pipeline)
-- Egor (doc-level baseline)
-- Claude Code (Alpha RAG Elite architecture)
 
 **Хакатон:** Альфа-Банк RAG Challenge
-**Дата:** Ноябрь 2024
