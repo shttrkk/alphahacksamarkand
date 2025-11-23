@@ -1,0 +1,26 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+tqdm>=4.65.0
+
+# NLP & Embeddings
+sentence-transformers>=2.2.2
+transformers>=4.30.0
+tokenizers>=0.13.0
+
+# Vector Search
+# NOTE: faiss-cpu устанавливается в setup.sh для максимальной совместимости
+# faiss-gpu часто конфликтует с разными версиями CUDA
+rank-bm25>=0.2.2
+
+# Deep Learning
+torch>=2.0.0
+accelerate>=0.20.0
+
+# Optional (for reranking)
+# cross-encoder models work through sentence-transformers
+
+# Utils
+pyarrow>=12.0.0  # For parquet
+pyyaml>=6.0
